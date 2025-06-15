@@ -10,7 +10,13 @@
 
 Sistem API untuk manajemen reimburse menggunakan Laravel, cocok untuk digunakan oleh **Employee**, **Manager**, dan **Admin**.
 
----
+=============================================================================================================================
+## ⚠️ Kendala yang Dihadapi
+
+Karena keterbatasan spesifikasi perangkat yang saya gunakan, saya tidak dapat menjalankan backend dan frontend secara bersamaan. Hal ini menyebabkan sistem menjadi tidak stabil saat pengembangan paralel.
+
+Oleh karena itu, saya memilih untuk memfokuskan pengembangan pada sisi **backend**, sesuai dengan kebutuhan lowongan yang dituju. Namun demikian, saya juga memiliki kemampuan dalam pengembangan frontend, dan berencana menggunakan **React** sebagai framework utama apabila waktu dan sumber daya mencukupi.
+============================================================================================================================
 
 ## ⚙️ Teknologi yang Digunakan
 
@@ -168,14 +174,17 @@ php artisan serve
 
 =======================================================================================================================
 
-🚧 Tantangan & Solusi
-Tantangan	Solusi
-🔐 Autentikasi fleksibel & aman	Menggunakan Laravel Sanctum untuk SPA dan API testing
-🧮 Validasi & pembatasan data	Menggunakan Form Request Validation dan Carbon
-📁 Manajemen file upload	Memanfaatkan Laravel Storage dan storage:link
-👥 Role & Hak Akses	Implementasi Spatie Laravel Permission
-📊 API untuk frontend	Response standar berbasis JSON dengan pesan dan status jelas
+## 🚧 Tantangan & Solusi
 
+| Tantangan                         | Solusi                                                                 |
+|----------------------------------|------------------------------------------------------------------------|
+| 🔐 Autentikasi fleksibel & aman   | Menggunakan **Laravel Sanctum** untuk SPA dan API testing             |
+| 🧮 Validasi & pembatasan data     | Menggunakan **Form Request Validation** dan **Carbon**                |
+| 📁 Manajemen file upload          | Memanfaatkan **Laravel Storage** dan `storage:link`                   |
+| 👥 Role & Hak Akses               | Implementasi **Spatie Laravel Permission** untuk kontrol via middleware |
+| 📊 API untuk frontend             | Response standar berbasis **JSON** dengan pesan dan status yang jelas |
+
+=======================================================================================================================
 
 ## 📣 Kontribusi & Lisensi
 
