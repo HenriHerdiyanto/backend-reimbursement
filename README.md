@@ -16,7 +16,7 @@ Sistem API untuk manajemen reimburse menggunakan Laravel, cocok untuk digunakan 
 
 | No | Teknologi                        | Deskripsi                                                                 |
 |----|----------------------------------|---------------------------------------------------------------------------|
-| ✅ 1 | **Laravel (v11 atau terbaru)**     | Framework utama untuk backend API. Mengatur routing, controller, model, middleware, dll. |
+| ✅ 1 | **Laravel (v12 terbaru)**     | Framework utama untuk backend API. Mengatur routing, controller, model, middleware, dll. |
 | ✅ 2 | **Laravel Sanctum**               | Autentikasi token-based untuk login dan akses API (via Postman). Menyediakan endpoint `/login`, `/me`, `/logout` dan middleware `auth:sanctum`. |
 | ✅ 3 | **Eloquent ORM**                 | Interaksi database menggunakan model (`User`, `Reimbursement`, `Category`). Menangani relasi seperti `user()->reimbursements()`. |
 | ✅ 4 | **File Upload (Laravel Storage)** | Menyimpan bukti reimburse (pdf/jpg/dll) di direktori `storage/app/public`. |
