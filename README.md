@@ -10,13 +10,12 @@
 
 Sistem API untuk manajemen reimburse menggunakan Laravel, cocok untuk digunakan oleh **Employee**, **Manager**, dan **Admin**.
 
-=============================================================================================================================
+===============================================================
 ## ⚠️ Kendala yang Dihadapi
 
-Karena keterbatasan spesifikasi perangkat yang saya gunakan, saya tidak dapat menjalankan backend dan frontend secara bersamaan. Hal ini menyebabkan sistem menjadi tidak stabil saat pengembangan paralel.
-
-Oleh karena itu, saya memilih untuk memfokuskan pengembangan pada sisi **backend**, sesuai dengan kebutuhan lowongan yang dituju. Namun demikian, saya juga memiliki kemampuan dalam pengembangan frontend, dan berencana menggunakan **React** sebagai framework utama apabila waktu dan sumber daya mencukupi.
-============================================================================================================================
+Karena keterbatasan spesifikasi perangkat yang saya gunakan, saya tidak dapat menjalankan backend dan frontend secara bersamaan. Hal ini menyebabkan sistem menjadi tidak stabil saat pengembangan paralel/bersamaan.
+oleh karena itu, saya memilih untuk memfokuskan pengembangan pada sisi **backend**, sesuai dengan kebutuhan lowongan yang dituju. namun demikian, saya juga memiliki kemampuan dalam pengembangan frontend, dan berencana menggunakan **react** sebagai framework utama apabila spesifikasi laptop saya mencukupi
+================================================================
 
 ## ⚙️ Teknologi yang Digunakan
 
