@@ -184,6 +184,7 @@ php artisan serve
 | 📊 API untuk frontend             | Response standar berbasis **JSON** dengan pesan dan status yang jelas |
 
 =======================================================================================================================
+<img src="arsitektur.png" alt="Tampilan" width="600"/>
 
 ## 📣 Kontribusi & Lisensi
 
