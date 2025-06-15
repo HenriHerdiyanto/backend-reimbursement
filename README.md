@@ -6,7 +6,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-
 # 💼 Reimbursement System API (Laravel)
 
 Sistem API untuk manajemen reimburse menggunakan Laravel, cocok untuk digunakan oleh **Employee**, **Manager**, dan **Admin**.
@@ -30,78 +29,75 @@ Sistem API untuk manajemen reimburse menggunakan Laravel, cocok untuk digunakan 
 
 ---
 
-## 🔐 Autentikasi & Endpoint
+## 🔐 Autentikasi
 
-### 🔸 `GET /api/me`
-Lihat data user yang sedang login.  
-🔐 **Butuh Token**
+### 🔸 Lihat Data User yang Login
+`GET http://localhost:8000/api/me`  
+🔐 *Butuh token*
 
----
+### 🔸 Login
+`POST http://localhost:8000/api/login`
 
-## 📥 Auth API
-
-### 🔹 `POST /api/login`
-Login user.  
-🔑 **Email & Password**
-
-### 🔹 `POST /api/register`
-Registrasi user baru.
+### 🔸 Register
+`POST http://localhost:8000/api/register`
 
 ---
 
-## 📂 Category API
+## 📂 Endpoint Category (Kategori)
 
-### 🔹 `GET /api/categories`
-Lihat semua kategori.  
-📌 **Public**
+### 🔹 Lihat Semua Kategori  
+`GET http://localhost:8000/api/categories`  
+📌 *Public*
 
-### 🔹 `GET /api/categoryAdminShow/{id}`
-Lihat detail kategori berdasarkan ID.  
-🔐 **Admin**
+### 🔹 Tambah Kategori (Admin)  
+`POST http://localhost:8000/api/categoryAdmin`  
+🔐 *Admin*
 
-### 🔹 `POST /api/categoryAdmin`
-Tambah kategori baru.  
-🔐 **Admin**
+### 🔹 Lihat Semua Kategori (Admin)  
+`GET http://localhost:8000/api/categoryAdmin`  
+🔐 *Admin*
 
-### 🔹 `GET /api/categoryAdmin`
-Lihat semua kategori (versi Admin).  
-🔐 **Admin**
+### 🔹 Lihat Detail Kategori (Admin)  
+`GET http://localhost:8000/api/categoryAdminShow/{id}`  
+🔐 *Admin*
 
-### 🔹 `PUT /api/categories/{id}`
-Update kategori.  
-🔐 **Admin**
+### 🔹 Update Kategori (Admin)  
+`PUT http://localhost:8000/api/categories/{id}`  
+🔐 *Admin*
 
 ---
 
-## 🧾 Reimbursement API
+## 🧾 Endpoint Reimbursement
 
-### 🔹 `GET /api/manager/reimbursementsManager`
-Lihat semua data reimbursement.  
-🔐 **Manager**
+### 🔹 CRUD Reimbursements (Employee)
+`GET|POST|PUT|DELETE http://localhost:8000/api/reimbursements`  
+🔐 *Employee*
 
-### 🔹 `PUT /api/reimbursements/{id}`
-Update status reimbursement.  
-🔐 **Manager**
+### 🔹 Lihat Semua Reimbursement (Manager)  
+`GET http://localhost:8000/api/manager/reimbursementsManager`  
+🔐 *Manager*
 
-### 🔹 `DELETE /api/reimbursements/{id}`
-Soft delete reimbursement.  
-🔐 **Admin**
+### 🔹 Update Status Reimbursement (Manager)  
+`PUT http://localhost:8000/api/reimbursements/{id}`  
+🔐 *Manager*
 
-### 🔹 `GET /api/reimbursementsAdmin`
-Lihat semua reimbursements (versi Admin).  
-🔐 **Admin**
+### 🔹 Soft Delete Reimbursement (Admin)  
+`DELETE http://localhost:8000/api/reimbursements/{id}`  
+🔐 *Admin*
 
-### 🔹 `GET|POST|PUT|DELETE /api/reimbursements`
-CRUD reimbursements (berdasarkan method yang digunakan).  
-🔐 **Employee**
+### 🔹 Lihat Semua Reimbursement (Admin)  
+`GET http://localhost:8000/api/reimbursementsAdmin`  
+🔐 *Admin*
 
 ---
 
 ## 📎 Catatan
 
 - Gunakan tools seperti **Postman** untuk mengakses dan menguji endpoint API.
-- Pastikan menambahkan `Authorization: Bearer {token}` di header untuk endpoint yang butuh autentikasi.
-- File bukti reimburse disimpan di `storage/app/public` dan dapat diakses melalui `php artisan storage:link`.
+- Tambahkan header:  
+  `Authorization: Bearer {token}` untuk endpoint yang membutuhkan autentikasi.
+- File bukti reimburse disimpan di direktori:  
+  `storage/app/public` dan dapat diakses menggunakan `php artisan storage:link`.
 
 ---
 
@@ -111,5 +107,4 @@ Feel free untuk mengembangkan lebih lanjut project ini!
 Lisensi mengikuti [MIT License](LICENSE) *(jika ada)*.
 
 ---
-
 
