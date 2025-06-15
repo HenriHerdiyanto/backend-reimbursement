@@ -166,6 +166,17 @@ php artisan storage:link
 # Jalankan server lokal
 php artisan serve
 
+=======================================================================================================================
+
+🚧 Tantangan & Solusi
+Tantangan	Solusi
+🔐 Autentikasi fleksibel & aman	Menggunakan Laravel Sanctum untuk SPA dan API testing
+🧮 Validasi & pembatasan data	Menggunakan Form Request Validation dan Carbon
+📁 Manajemen file upload	Memanfaatkan Laravel Storage dan storage:link
+👥 Role & Hak Akses	Implementasi Spatie Laravel Permission
+📊 API untuk frontend	Response standar berbasis JSON dengan pesan dan status jelas
+
+
 ## 📣 Kontribusi & Lisensi
 
 Feel free untuk mengembangkan lebih lanjut project ini!  
