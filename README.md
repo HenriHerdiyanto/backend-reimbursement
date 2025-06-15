@@ -101,6 +101,71 @@ Sistem API untuk manajemen reimburse menggunakan Laravel, cocok untuk digunakan 
 
 ---
 
+
+# 🧾 Reimbursement App (Laravel)
+
+Aplikasi manajemen reimbursement berbasis Laravel, lengkap dengan autentikasi API, logika perhitungan otomatis, dan struktur kode yang rapi untuk pengembangan lanjutan.
+
+---
+
+## 🎨 Penjelasan Desain
+
+### ⚙️ Alasan Pemilihan Pendekatan
+
+- **Laravel** dipilih karena:
+  - Mendukung pembuatan API dengan struktur yang rapi
+  - Sistem autentikasi dan validasi yang kuat
+  - Manajemen database melalui Eloquent ORM
+- **Laravel Sanctum** digunakan untuk autentikasi API yang ringan namun aman, ideal untuk SPA (React) dan testing via Postman.
+- **Eloquent ORM** mempermudah manipulasi dan relasi data antar tabel secara efisien.
+
+---
+
+## 💸 Perhitungan Remunerasi
+
+- Perhitungan total pengajuan per bulan dilakukan sepenuhnya di **backend** menggunakan query builder dan library **Carbon**.
+- Contoh logika:
+  - Membatasi jumlah maksimal reimbursement per bulan dengan `whereMonth()`, `sum('amount')`, dan validasi kustom.
+- Hasil akhir langsung dikirim ke frontend, sehingga tampilan hanya fokus pada penyajian data.
+
+---
+
+## ⚙️ Setup & Deploy Lokal
+
+### ✅ Prasyarat
+
+- PHP >= 8.2  
+- Composer  
+- MySQL / MariaDB  
+
+### 🛠️ Langkah-langkah Instalasi
+
+```bash
+# Clone repository
+git clone https://github.com/username/nama-project.git
+cd nama-project
+
+# Install dependensi
+composer install
+
+# Salin file environment dan generate app key
+cp .env.example .env
+php artisan key:generate
+
+# Konfigurasi database di file .env
+DB_DATABASE=reimburse_app
+DB_USERNAME=root
+DB_PASSWORD=
+
+# Jalankan migrasi & seeder (opsional)
+php artisan migrate --seed
+
+# Buat symbolic link untuk file upload
+php artisan storage:link
+
+# Jalankan server lokal
+php artisan serve
+
 ## 📣 Kontribusi & Lisensi
 
 Feel free untuk mengembangkan lebih lanjut project ini!  
